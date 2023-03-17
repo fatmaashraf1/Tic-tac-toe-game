@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XO Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+</head>
+
+<body>    
+    <audio id="back-music" autoplay>
+        <source src="audio/back.mp3" type="audio/mp3">
+    </audio>
+    <audio id="party">
+        <source src="audio/Party Horn - Sound Effect (HD).mp3" type="audio/mp3">
+    </audio>
+
+    <audio id="click">
+        <source src="audio/Mouse Click  .mp3" type="audio/mp3">
+    </audio>
+    
+    <div id="loader"></div>
+    <div id="welcome-page">
+        <h1 class="animate-charcter">XO GAME</h1>
+        <button id="play-button">Start</button>
+    </div>
+    
+    <img id="poppers" src="images/output-onlinegiftools.gif" alt="">
+
+
+    <div class="background" id="back">
+        <div class="title">
+            <h1>XO GAME</h1>
+        </div>
+        <div class="display" id="turn">
+            <p id="play">Lets play..</p>
+            <p id="display">Player<span class="display-player" id="player">X</span>'s turn</p>
+        </div>
+
+        <div class="container">
+            <div class="tile" id="1" onclick="game(this.id)"></div>
+            <div class="tile" id="2" onclick="game(this.id)"></div>
+            <div class="tile" id="3" onclick="game(this.id)"></div>
+            <div class="tile" id="4" onclick="game(this.id)"></div>
+            <div class="tile" id="5" onclick="game(this.id)"></div>
+            <div class="tile" id="6" onclick="game(this.id)"></div>
+            <div class="tile" id="7" onclick="game(this.id)"></div>
+            <div class="tile" id="8" onclick="game(this.id)"></div>
+            <div class="tile" id="9" onclick="game(this.id)"></div>
+        </div>
+        <div class="announce" id="result">
+
+        </div>
+        <div class="controls">
+            <button id="reset">Reset</button>
+        </div>
+    </div>
+
+    
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
